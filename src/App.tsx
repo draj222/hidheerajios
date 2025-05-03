@@ -8,12 +8,17 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import './styles/App.css';
+import resumeData from './resume.json';
 
 function App() {
   const [activeTab, setActiveTab] = useState('about');
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
+    // Set document title based on resume data
+    const { name, title } = resumeData.basics;
+    document.title = `${name} - ${title}`;
+    
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 768);
     };
@@ -41,7 +46,7 @@ function App() {
 
   const appContent = (
     <div className="ios-app">
-      <Header activeTab={activeTab} />
+      <Header />
       <main className="ios-content">
         {renderContent()}
       </main>

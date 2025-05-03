@@ -94,6 +94,7 @@
       "technology": "iOS",
       "folderName": "axio",
       "description": "Simple and intuitive, the axio app brings three industry-leading products: 1) axio Pay Later - BNPL credit facility transforming purchases into affordable EMIs, 2) Personal loan - Access exceptional loan options, monitor EMIs, and receive timely repayment reminders, 3) Shop - Explore categories across brands with affordable EMIs, 4) Expense Tracker - Track expenses, plan budgets, monitor daily/monthly expenses, manage bills, and receive payment reminders, 5) Splits & Groups - Split expenses with friends/family in private or shared groups with in-app chat and flexible splitting options.",
+      "appLink": "https://apps.apple.com/in/app/axio-bnpl-personal-loan/id6449531839",
       "screenshots": [
         "./assets/projects/axio/screenshot-1.png",
         "./assets/projects/axio/screenshot-2.png",
@@ -114,7 +115,6 @@
       "folderName": "my-telstra",
       "description": "The My Telstra app is helping over 4.5 million users securely access and manage their Telstra accounts and services. Sign in with a Telstra ID or create one when you've downloaded the app and get the latest on your services, Telstra Plus points, bills and payments when you want it, shop latest devices and accessories and get help when you need it, all in one place.",
       "appLink": "https://apps.apple.com/us/app/my-telstra/id543829966",
-      "featuresLink": "https://www.telstra.com.au/mytelstra#get-the-app",
       "screenshots": [
         "./assets/projects/my-telstra/screenshot-1.png",
         "./assets/projects/my-telstra/screenshot-2.png",

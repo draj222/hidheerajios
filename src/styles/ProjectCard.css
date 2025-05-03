@@ -50,10 +50,31 @@
   color: var(--ios-text-primary);
 }
 
-.project-links {
-  display: flex;
-  gap: var(--spacing-sm);
+/* App Store link button */
+.app-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
   margin-bottom: var(--spacing-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-link-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-link-icon {
+  margin-right: 4px;
 }
 
 /* Thumbnails row */
