@@ -19,16 +19,23 @@
   height: 18px;
   border-radius: 50%;
   background-color: var(--ios-primary);
-  border: 3px solid white;
+  border: 3px solid var(--ios-timeline-marker-border);
   z-index: 1;
 }
 
+body.dark-theme .timeline-marker {
+  border-color: var(--ios-dark-timeline-marker-border);
+}
 
 .job-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: var(--spacing-xs);
   color: var(--ios-text-primary);
+}
+
+body.dark-theme .job-title {
+  color: var(--ios-dark-text-primary);
 }
 
 .company-info {
@@ -40,6 +47,10 @@
 .company-name {
   font-weight: 600;
   color: var(--ios-text-primary);
+}
+
+body.dark-theme .company-name {
+  color: var(--ios-dark-text-primary);
 }
 
 .job-location {
@@ -63,6 +74,11 @@
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .job-responsibilities li {
+  color: var(--ios-dark-text-primary);
 }
 
 .job-responsibilities li::before {

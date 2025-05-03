@@ -1,0 +1,33 @@
+.ios-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--ios-header-background);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--ios-separator);
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .header-title {
+  color: var(--ios-dark-text-primary);
+}
+
+body.dark-theme .ios-header {
+  background-color: var(--ios-dark-header-background);
+  border-bottom-color: var(--ios-dark-separator);
+} 

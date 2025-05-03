@@ -1,24 +1,60 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTheme } from './ThemeContext';
 import '../styles/PhoneFrame.css';
 
 interface PhoneFrameProps {
   children: React.ReactNode;
-  darkStatusBar?: boolean;
   batteryLevel?: number; // 0-100
+}
+
+// Define battery interface
+interface BatteryManager {
+  charging: boolean;
+  chargingTime: number;
+  dischargingTime: number;
+  level: number;
+  addEventListener: (type: string, listener: EventListener) => void;
+  removeEventListener: (type: string, listener: EventListener) => void;
+}
+
+// Extend Navigator interface
+interface NavigatorWithBattery extends Navigator {
+  getBattery: () => Promise<BatteryManager>;
 }
 
 const PhoneFrame: React.FC<PhoneFrameProps> = ({ 
   children, 
-  darkStatusBar = true,
   batteryLevel = 75 
 }) => {
+  const { isDarkMode } = useTheme();
+  const [actualBatteryLevel, setActualBatteryLevel] = useState<number>(batteryLevel);
   const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
-  const iconColor = darkStatusBar ? "black" : "white";
+  const iconColor = isDarkMode ? "white" : "black";
+  
+  useEffect(() => {
+    const getBatteryStatus = async () => {
+      try {
+        if ('getBattery' in navigator) {
+          const battery = await (navigator as NavigatorWithBattery).getBattery();
+          setActualBatteryLevel(Math.round(battery.level * 100));
+          
+          // Listen for battery level changes
+          battery.addEventListener('levelchange', () => {
+            setActualBatteryLevel(Math.round(battery.level * 100));
+          });
+        }
+      } catch {
+        console.log('Battery API not supported or permission denied');
+      }
+    };
+    
+    getBatteryStatus();
+  }, []);
   
   return (
-    <div className="phone-frame-container">
-      <div className="phone-frame">
-        <div className={`phone-frame-status-bar ${darkStatusBar ? 'dark-status-bar' : 'light-status-bar'}`}>
+    <div className={`phone-frame-container ${isDarkMode ? 'dark-phone-frame' : ''}`}>
+      <div className={`phone-frame ${isDarkMode ? 'dark-frame' : ''}`}>
+        <div className={`phone-frame-status-bar ${isDarkMode ? 'light-status-bar' : 'dark-status-bar'}`}>
           <div className="status-bar-time">{time}</div>
           <div className="dynamic-island">
             <div className="dynamic-island-camera"></div>
@@ -39,7 +75,7 @@ const PhoneFrame: React.FC<PhoneFrameProps> = ({
             </svg>
             <svg className="battery-icon-svg" width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" y="0.5" width="21" height="11" rx="2.5" stroke={iconColor} />
-              <rect x="2" y="2" width={`${batteryLevel / 100 * 18}`} height="8" rx="1" fill={iconColor} />
+              <rect x="2" y="2" width={`${actualBatteryLevel / 100 * 18}`} height="8" rx="1" fill={iconColor} />
               <path d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4Z" fill={iconColor} />
             </svg>
           </div>
@@ -47,7 +83,7 @@ const PhoneFrame: React.FC<PhoneFrameProps> = ({
         <div className="phone-frame-content">
           {children}
         </div>
-        <div className="phone-frame-home-indicator"></div>
+        <div className={`phone-frame-home-indicator ${isDarkMode ? 'dark-home-indicator' : ''}`}></div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(249, 249, 249, 0.94);
+  background-color: var(--ios-header-background);
   border-top: 1px solid var(--ios-separator);
   height: 76px;
   position: fixed;
@@ -10,6 +10,14 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Dark mode styles for tab bar */
+body.dark-theme .tab-bar {
+  background-color: var(--ios-dark-header-background);
+  border-top-color: var(--ios-dark-separator);
 }
 
 /* Mobile view (outside phone frame) */
@@ -47,6 +55,15 @@
 }
 
 .tab-item.active {
+  color: var(--ios-primary);
+}
+
+/* Dark mode tab items */
+body.dark-theme .tab-item {
+  color: var(--ios-dark-text-secondary);
+}
+
+body.dark-theme .tab-item.active {
   color: var(--ios-primary);
 }
 

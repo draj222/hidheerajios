@@ -14,6 +14,47 @@
   --ios-border: #C7C7CC;
   --ios-separator: #E5E5EA;
   --ios-header-background: rgba(249, 249, 249, 0.94);
+  --ios-page-background: #fafafa;
+  --ios-button-hover: #0066CC;
+  --ios-shadow: rgba(0, 0, 0, 0.05);
+  --ios-scrollbar-track: #f1f1f1;
+  --ios-scrollbar-thumb: #888;
+  --ios-timeline-marker-border: #FFFFFF;
+  --ios-primary-light-bg: rgba(0, 122, 255, 0.1);
+  --ios-appstore-button-bg: #000000;
+  --ios-appstore-button-hover: #333333;
+  --ios-appstore-text: #FFFFFF;
+  --ios-appstore-shadow: rgba(0, 0, 0, 0.1);
+  --ios-appstore-shadow-hover: rgba(0, 0, 0, 0.15);
+  --ios-carousel-button-bg: rgba(255, 255, 255, 0.8);
+  --ios-carousel-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Dark theme colors */
+  --ios-dark-background: #1C1C1E;
+  --ios-dark-card-background: #2C2C2E;
+  --ios-dark-text-primary: #FFFFFF;
+  --ios-dark-text-secondary: #AEAEB2;
+  --ios-dark-border: #38383A;
+  --ios-dark-separator: #38383A;
+  --ios-dark-header-background: rgba(29, 29, 31, 0.94);
+  --ios-dark-page-background: #000000;
+  --ios-dark-button-hover: #0077e5;
+  --ios-dark-shadow: rgba(0, 0, 0, 0.2);
+  --ios-dark-scrollbar-track: #2C2C2E;
+  --ios-dark-scrollbar-thumb: #444444;
+  --ios-dark-timeline-marker-border: #2C2C2E;
+  --ios-dark-primary-light-bg: rgba(0, 122, 255, 0.2);
+  --ios-dark-appstore-button-bg: #1C1C1E;
+  --ios-dark-appstore-button-hover: #444444;
+  --ios-dark-appstore-shadow: rgba(0, 0, 0, 0.2);
+  --ios-dark-appstore-shadow-hover: rgba(0, 0, 0, 0.25);
+  --ios-dark-carousel-button-bg: rgba(60, 60, 60, 0.8);
+  --ios-dark-carousel-shadow: rgba(0, 0, 0, 0.2);
+  
+  /* Camera colors */
+  --camera-dark: #444;
+  --camera-darker: #222;
+  --sensor-dark: #333;
   
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -35,6 +76,44 @@
   --transition-medium: 0.3s;
 }
 
+/* Apply theme transitions to elements */
+body, .ios-app, .ios-card, .ios-header, .tab-bar, .ios-button {
+  transition: background-color var(--transition-medium), color var(--transition-medium), border-color var(--transition-medium);
+}
+
+/* Dark theme class */
+body.dark-theme {
+  color: var(--ios-dark-text-primary);
+  background-color: var(--ios-dark-page-background);
+}
+
+body.dark-theme .ios-app {
+  background-color: var(--ios-dark-background);
+}
+
+body.dark-theme .ios-card {
+  background-color: var(--ios-dark-card-background);
+  box-shadow: 0 2px 10px var(--ios-dark-shadow);
+}
+
+body.dark-theme .ios-header {
+  background-color: var(--ios-dark-header-background);
+  border-color: var(--ios-dark-border);
+}
+
+body.dark-theme .tab-bar {
+  background-color: var(--ios-dark-card-background);
+  border-color: var(--ios-dark-border);
+}
+
+body.dark-theme .ios-text-primary {
+  color: var(--ios-dark-text-primary);
+}
+
+body.dark-theme .ios-text-secondary {
+  color: var(--ios-dark-text-secondary);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +125,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--ios-text-primary);
-  background-color: #fafafa; /* Background for the overall page */
+  background-color: var(--ios-page-background);
 }
 
 .ios-app {
@@ -90,7 +169,7 @@ body {
   background-color: var(--ios-card-background);
   border-radius: var(--radius-md);
   padding: var(--spacing-md);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px var(--ios-shadow);
   margin-bottom: var(--spacing-md);
 }
 
@@ -107,7 +186,11 @@ body {
 }
 
 .ios-button:hover {
-  background-color: #0066CC;
+  background-color: var(--ios-button-hover);
+}
+
+body.dark-theme .ios-button:hover {
+  background-color: var(--ios-dark-button-hover);
 }
 
 /* Custom scrollbar for desktop */
@@ -120,9 +203,17 @@ body {
     background: var(--ios-background);
   }
 
+  body.dark-theme .ios-content::-webkit-scrollbar-track {
+    background: var(--ios-dark-background);
+  }
+
   .ios-content::-webkit-scrollbar-thumb {
     background-color: var(--ios-border);
     border-radius: 20px;
+  }
+
+  body.dark-theme .ios-content::-webkit-scrollbar-thumb {
+    background-color: var(--ios-dark-border);
   }
 }
 

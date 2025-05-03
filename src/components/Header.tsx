@@ -1,10 +1,16 @@
 import React from 'react';
-// No need for CSS import since we're not using any styles
-// import '../styles/Header.css';
+import ThemeToggle from './ThemeToggle';
+import '../styles/Header.css';
 
-// Return null as there's no header at all now
 const Header: React.FC = () => {
-  return null;
+  return (
+    <header className="ios-header">
+      <div className="header-content">
+        <h1 className="header-title">Portfolio</h1>
+        <ThemeToggle />
+      </div>
+    </header>
+  );
 };
 
 export default Header;

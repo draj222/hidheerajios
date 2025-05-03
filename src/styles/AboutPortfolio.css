@@ -16,10 +16,14 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background-color: rgba(0, 122, 255, 0.1);
+  background-color: var(--ios-primary-light-bg);
   border-radius: 50%;
   color: var(--ios-primary);
   margin-bottom: var(--spacing-md);
+}
+
+body.dark-theme .github-icon {
+  background-color: var(--ios-dark-primary-light-bg);
 }
 
 .about-portfolio-card h3 {
@@ -29,11 +33,19 @@
   color: var(--ios-text-primary);
 }
 
+body.dark-theme .about-portfolio-card h3 {
+  color: var(--ios-dark-text-primary);
+}
+
 .about-portfolio-card p {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: var(--spacing-md);
   color: var(--ios-text-primary);
+}
+
+body.dark-theme .about-portfolio-card p {
+  color: var(--ios-dark-text-primary);
 }
 
 .portfolio-tech {
@@ -48,6 +60,10 @@
   color: var(--ios-text-primary);
 }
 
+body.dark-theme .portfolio-tech h4 {
+  color: var(--ios-dark-text-primary);
+}
+
 .portfolio-tech ul {
   display: flex;
   justify-content: center;
@@ -57,11 +73,15 @@
 }
 
 .portfolio-tech li {
-  background-color: rgba(0, 122, 255, 0.1);
+  background-color: var(--ios-primary-light-bg);
   padding: 4px 12px;
   border-radius: 16px;
   font-size: 12px;
   color: var(--ios-primary);
+}
+
+body.dark-theme .portfolio-tech li {
+  background-color: var(--ios-dark-primary-light-bg);
 }
 
 .ios-button {

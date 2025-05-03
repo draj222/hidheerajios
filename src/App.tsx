@@ -7,6 +7,7 @@ import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Header from './components/Header';
+import { ThemeProvider } from './components/ThemeContext';
 import './styles/App.css';
 import resumeData from './resume.json';
 
@@ -54,7 +55,11 @@ function App() {
     </div>
   );
 
-  return isDesktop ? <PhoneFrame>{appContent}</PhoneFrame> : appContent;
+  return (
+    <ThemeProvider>
+      {isDesktop ? <PhoneFrame>{appContent}</PhoneFrame> : appContent}
+    </ThemeProvider>
+  );
 }
 
 export default App;
