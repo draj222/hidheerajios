@@ -1,10 +1,11 @@
-# iOS-inspired Portfolio Website
+# Prince Sojitra Portfolio
 
 A React-based portfolio website with iOS-inspired UI.
 
 ## Deployment
 
 This project is configured to automatically deploy to GitHub Pages when changes are pushed to the main branch.
+The site will be accessible at: https://hardiksondagar.me/princesojitra/
 
 ### Manual Deployment
 
