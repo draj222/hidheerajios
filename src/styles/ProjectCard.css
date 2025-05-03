@@ -1,0 +1,124 @@
+.project-card {
+  background-color: var(--ios-card-background);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-medium);
+  padding: var(--spacing-md);
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--ios-text-primary);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-tag {
+  background-color: rgba(0, 122, 255, 0.1);
+  color: var(--ios-primary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-main-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view-details {
+  font-size: 14px;
+  color: var(--ios-primary);
+  font-weight: 500;
+}
+
+.project-expand-icon {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--ios-primary);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-details {
+  padding-top: var(--spacing-md);
+  animation: slideDown 0.3s ease;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--spacing-sm);
+  font-size: 14px;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  color: var(--ios-text-primary);
+}
+
+.project-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.screenshot-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.project-screenshots h4 {
+  font-size: 14px;
+  margin-bottom: var(--spacing-sm);
+  color: var(--ios-text-secondary);
+}
+
+/* Animation for expanding card */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card.expanded {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
