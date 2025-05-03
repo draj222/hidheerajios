@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 import resumeData from '../resume.json';
+import ThemeToggle from './ThemeToggle';
 
 const About: React.FC = () => {
   const { basics, summary, skills, languages } = resumeData;
@@ -17,6 +18,7 @@ const About: React.FC = () => {
         </div>
         <h2 className="profile-name">{basics.name}</h2>
         <p className="profile-title">{basics.title}</p>
+        <ThemeToggle />
       </div>
 
       <div className="ios-card">

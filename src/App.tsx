@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Contact from './components/Contact';
-import Header from './components/Header';
 import { ThemeProvider } from './components/ThemeContext';
 import './styles/App.css';
 import resumeData from './resume.json';
@@ -47,7 +46,6 @@ function App() {
 
   const appContent = (
     <div className="ios-app">
-      <Header />
       <main className="ios-content">
         {renderContent()}
       </main>
