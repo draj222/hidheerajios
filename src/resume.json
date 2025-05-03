@@ -108,7 +108,7 @@
     },
     {
       "id": 2,
-      "title": "My Telstra - Universal App for Telstra Telecommunication",
+      "title": "My Telstra - Utilities",
       "role": "Module Lead",
       "language": "Swift, RxSwift",
       "technology": "iOS",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "title": "Sun Keeper - Health & Fitness Mobile App",
+      "title": "Sun Keeper - Health & Fitness",
       "role": "Senior iOS Developer",
       "language": "Swift",
       "technology": "iOS",
@@ -139,7 +139,7 @@
     },
     {
       "id": 4,
-      "title": "LECA Consultant App - Energy Projects",
+      "title": "LECA Consultant - Energy Projects",
       "role": "Senior iOS Developer",
       "language": "Swift",
       "technology": "iOS",
@@ -154,7 +154,7 @@
     },
     {
       "id": 5,
-      "title": "LECA Installer App - Energy Projects",
+      "title": "LECA Installer - Energy Projects",
       "role": "Senior iOS Developer",
       "language": "Swift",
       "technology": "iOS",
