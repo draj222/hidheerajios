@@ -2,7 +2,7 @@
   "basics": {
     "name": "Prince Sojitra",
     "title": "iOS Developer",
-    "image": "/assets/images/profile.jpeg",
+    "image": "./assets/images/profile.jpeg",
     "email": "princehsojitra@gmail.com",
     "phone": "+919428242130",
     "location": "Pune, Maharashtra, India",
@@ -95,14 +95,14 @@
       "folderName": "axio",
       "description": "Simple and intuitive, the axio app brings three industry-leading products: 1) axio Pay Later - BNPL credit facility transforming purchases into affordable EMIs, 2) Personal loan - Access exceptional loan options, monitor EMIs, and receive timely repayment reminders, 3) Shop - Explore categories across brands with affordable EMIs, 4) Expense Tracker - Track expenses, plan budgets, monitor daily/monthly expenses, manage bills, and receive payment reminders, 5) Splits & Groups - Split expenses with friends/family in private or shared groups with in-app chat and flexible splitting options.",
       "screenshots": [
-        "/assets/projects/axio/screenshot-1.png",
-        "/assets/projects/axio/screenshot-2.png",
-        "/assets/projects/axio/screenshot-3.png",
-        "/assets/projects/axio/screenshot-4.png",
-        "/assets/projects/axio/screenshot-5.png",
-        "/assets/projects/axio/screenshot-6.png",
-        "/assets/projects/axio/screenshot-7.png",
-        "/assets/projects/axio/screenshot-8.png"
+        "./assets/projects/axio/screenshot-1.png",
+        "./assets/projects/axio/screenshot-2.png",
+        "./assets/projects/axio/screenshot-3.png",
+        "./assets/projects/axio/screenshot-4.png",
+        "./assets/projects/axio/screenshot-5.png",
+        "./assets/projects/axio/screenshot-6.png",
+        "./assets/projects/axio/screenshot-7.png",
+        "./assets/projects/axio/screenshot-8.png"
       ]
     },
     {
@@ -116,9 +116,9 @@
       "appLink": "https://apps.apple.com/us/app/my-telstra/id543829966",
       "featuresLink": "https://www.telstra.com.au/mytelstra#get-the-app",
       "screenshots": [
-        "/assets/projects/my-telstra/screenshot-1.png",
-        "/assets/projects/my-telstra/screenshot-2.png",
-        "/assets/projects/my-telstra/screenshot-3.png"
+        "./assets/projects/my-telstra/screenshot-1.png",
+        "./assets/projects/my-telstra/screenshot-2.png",
+        "./assets/projects/my-telstra/screenshot-3.png"
       ]
     },
     {
@@ -130,11 +130,11 @@
       "folderName": "sun-keeper",
       "description": "This simple and user-friendly app helps you to manage your personal recommended daily sun exposure for optimal production of vitamin D and overall skin health — and before you're ever at risk of burning. By authorizing your location and entering basic personal information about your skin type, Sun Keeper will calculate a sufficient and appropriate length of time you should spend in the sun. When your sun-exposure limit is reached, the app will alert and remind you to reapply sunscreen, cover up, or get out of the sun. Sun Keeper offers recommendations that vary with the individual and are based on the personal information you enter along with your location, date, and time.",
       "screenshots": [
-        "/assets/projects/sun-keeper/screenshot-1.png",
-        "/assets/projects/sun-keeper/screenshot-2.png",
-        "/assets/projects/sun-keeper/screenshot-3.png",
-        "/assets/projects/sun-keeper/screenshot-4.png",
-        "/assets/projects/sun-keeper/screenshot-5.png"
+        "./assets/projects/sun-keeper/screenshot-1.png",
+        "./assets/projects/sun-keeper/screenshot-2.png",
+        "./assets/projects/sun-keeper/screenshot-3.png",
+        "./assets/projects/sun-keeper/screenshot-4.png",
+        "./assets/projects/sun-keeper/screenshot-5.png"
       ]
     },
     {
@@ -146,10 +146,10 @@
       "folderName": "leca-consultant-app",
       "description": "The Leca Consultant application is a tool catered for our consultants where they can not only handle their day-to-day consultations but also create installation jobs and collect the required customer details. The in-built Leca Calculator, calculates the ideal system size for a customer based on these details and the app allows them to track each installation job they created, throughout its life-cycle.",
       "screenshots": [
-        "/assets/projects/leca-consultant-app/screenshot-1.png",
-        "/assets/projects/leca-consultant-app/screenshot-2.png",
-        "/assets/projects/leca-consultant-app/screenshot-3.png",
-        "/assets/projects/leca-consultant-app/screenshot-4.png"
+        "./assets/projects/leca-consultant-app/screenshot-1.png",
+        "./assets/projects/leca-consultant-app/screenshot-2.png",
+        "./assets/projects/leca-consultant-app/screenshot-3.png",
+        "./assets/projects/leca-consultant-app/screenshot-4.png"
       ]
     },
     {
@@ -161,9 +161,9 @@
       "folderName": "leca-installer-app",
       "description": "The Leca Installer application is a tool catered for our installers where they can not only handle their day-to-day installation jobs but also schedule future jobs. The app assists the installers throughout an installation, right from knowing every job detail prior to job acceptance, to managing all post-installation documentation. The app notifies registered Installers about upcoming installation jobs and site visits. They can proceed to accept jobs after they take a look at the job description provided. On the day of the installation, the app tracks the entire installation process step-by-step and allows the admin at Leca to validate the installation.",
       "screenshots": [
-        "/assets/projects/leca-installer-app/screenshot-1.png",
-        "/assets/projects/leca-installer-app/screenshot-2.png",
-        "/assets/projects/leca-installer-app/screenshot-3.png"
+        "./assets/projects/leca-installer-app/screenshot-1.png",
+        "./assets/projects/leca-installer-app/screenshot-2.png",
+        "./assets/projects/leca-installer-app/screenshot-3.png"
       ]
     },
     {
@@ -199,12 +199,12 @@
       "folderName": "big-joker-spades",
       "description": "Big Joker Spades is focused on bringing an emotional feel to the popular game \"Spades\" through the use of animations and intense game-play. Winning books by cool features and utilizing Jokers throughout the game brings a connection to the players that they won't experience on any other spades platform. In this game jokers are positioned as the highest Spades. So instead of just 13 spades, there are now 15 spades. With more spades it makes this variation an easier game to play.",
       "screenshots": [
-        "/assets/projects/big-joker-spades/screenshot-1.png",
-        "/assets/projects/big-joker-spades/screenshot-2.png",
-        "/assets/projects/big-joker-spades/screenshot-3.png",
-        "/assets/projects/big-joker-spades/screenshot-4.png",
-        "/assets/projects/big-joker-spades/screenshot-5.png",
-        "/assets/projects/big-joker-spades/screenshot-6.png"
+        "./assets/projects/big-joker-spades/screenshot-1.png",
+        "./assets/projects/big-joker-spades/screenshot-2.png",
+        "./assets/projects/big-joker-spades/screenshot-3.png",
+        "./assets/projects/big-joker-spades/screenshot-4.png",
+        "./assets/projects/big-joker-spades/screenshot-5.png",
+        "./assets/projects/big-joker-spades/screenshot-6.png"
       ]
     }
   ]
