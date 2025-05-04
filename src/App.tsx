@@ -68,7 +68,7 @@ function App() {
     <ThemeProvider>
       <Router basename={basePath}>
         <Routes>
-          <Route path="/resume" element={<Resume />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="/" element={isDesktop ? <PhoneFrame>{appContent}</PhoneFrame> : appContent} />
         </Routes>
       </Router>
