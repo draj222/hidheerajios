@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import resumeData from '../resume.json';
 import ThemeToggle from './ThemeToggle';
@@ -16,9 +17,15 @@ const About: React.FC = () => {
             className="profile-image" 
           />
         </div>
-        <h2 className="profile-name">{basics.name}</h2>
+        <div className="name-toggle-container">
+          <div className="theme-toggle-placeholder"></div>
+          <h2 className="profile-name">{basics.name}</h2>
+        </div>
         <p className="profile-title">{basics.title}</p>
-        <ThemeToggle />
+        <Link to="/resume" className="resume-link" target="_blank">View Resume</Link>
+        <div className="theme-toggle-link">
+          <ThemeToggle />
+        </div>
       </div>
 
       <div className="ios-card">

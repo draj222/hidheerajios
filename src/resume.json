@@ -19,7 +19,7 @@
       }
     ]
   },
-  "summary": "Experienced software engineer with a proven track record in the computer software industry. Expertise includes 11+ years of IT experience in analysis, architecture, design, development, testing, and implementation of iOS applications. Proficient in Swift, SwiftUI, Objective-C, and basic knowledge of Flutter. Skilled in full-cycle development from ideation to deployment using Agile methodology. Demonstrated leadership in managing onsite/offshore teams and collaborating with QA and business analysts. Committed to enhancing product quality through code reviews and effective unit testing. Adept at translating client requirements into actionable user stories within Scrum teams.",
+  "summary": "Software engineer with 11+ years of experience in iOS application development. Strong skills in Swift, SwiftUI, and Objective-C, with basic knowledge of Flutter. Experienced in the full development cycle from planning to release using Agile methods. Led teams and worked closely with QA and business teams. Focused on improving product quality through code reviews and testing. Good at turning client needs into workable solutions within Scrum teams.",
   "skills": [
     {
       "category": "Coding Languages",
@@ -90,7 +90,7 @@
       "id": 1,
       "title": "axio: BNPL, Personal Loan & Expense Tracker",
       "role": "iOS Developer",
-      "language": "Swift, SwiftUI, Combine",
+      "language": "Swift, Combine",
       "technology": "iOS",
       "folderName": "axio",
       "description": "Simple and intuitive, the axio app brings three industry-leading products: 1) axio Pay Later - BNPL credit facility transforming purchases into affordable EMIs, 2) Personal loan - Access exceptional loan options, monitor EMIs, and receive timely repayment reminders, 3) Shop - Explore categories across brands with affordable EMIs, 4) Expense Tracker - Track expenses, plan budgets, monitor daily/monthly expenses, manage bills, and receive payment reminders, 5) Splits & Groups - Split expenses with friends/family in private or shared groups with in-app chat and flexible splitting options.",
