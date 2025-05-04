@@ -16,6 +16,15 @@ function App() {
   const [activeTab, setActiveTab] = useState('about');
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
+  // Dynamically determine the base path from the current URL pathname
+  const getBasePath = () => {
+    // Extract the first path segment (e.g., from "/ios-portfolio/something" get "/ios-portfolio")
+    const pathSegments = window.location.pathname.split('/').filter(Boolean);
+    return pathSegments.length > 0 ? `/${pathSegments[0]}` : '';
+  };
+
+  const basePath = getBasePath();
+
   useEffect(() => {
     // Set document title based on resume data
     const { name, title } = resumeData.basics;
@@ -57,7 +66,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={basePath}>
         <Routes>
           <Route path="/resume" element={<Resume />} />
           <Route path="/" element={isDesktop ? <PhoneFrame>{appContent}</PhoneFrame> : appContent} />
