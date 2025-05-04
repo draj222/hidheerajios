@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import TabBar from './components/TabBar';
 import PhoneFrame from './components/PhoneFrame';
 import About from './components/About';
@@ -15,15 +15,6 @@ import resumeData from './resume.json';
 function App() {
   const [activeTab, setActiveTab] = useState('about');
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
-
-  // Dynamically determine the base path from the current URL pathname
-  const getBasePath = () => {
-    // Extract the first path segment (e.g., from "/ios-portfolio/something" get "/ios-portfolio")
-    const pathSegments = window.location.pathname.split('/').filter(Boolean);
-    return pathSegments.length > 0 ? `/${pathSegments[0]}` : '';
-  };
-
-  const basePath = getBasePath();
 
   useEffect(() => {
     // Set document title based on resume data
@@ -66,9 +57,9 @@ function App() {
 
   return (
     <ThemeProvider>
-      <Router basename={basePath}>
+      <Router>
         <Routes>
-          <Route path="resume" element={<Resume />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/" element={isDesktop ? <PhoneFrame>{appContent}</PhoneFrame> : appContent} />
         </Routes>
       </Router>
