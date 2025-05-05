@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website that mimics an iOS mobile interface to showcase your professional experience in a unique way.
 
+**[Live Demo](https://hardiksondagar.me/ios-portfolio/)** - Check out the live preview!
+
 ![iOS Portfolio Preview](./src/assets/preview.png)
 
 ## Features
