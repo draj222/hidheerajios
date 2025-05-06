@@ -6,6 +6,14 @@
   padding: 20px;
   background-color: transparent;
   transition: background-color var(--transition-medium);
+  overflow: hidden; /* Prevent outer scrolling */
+  height: 100vh; /* Fix the height */
+  position: fixed; /* Prevent page scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .dark-phone-frame {
@@ -34,7 +42,7 @@
 .phone-frame-content {
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   background-color: transparent;
   padding-top: 55px; /* Add padding to avoid overlap with status bar */
@@ -161,7 +169,8 @@
 .phone-frame-content .ios-app {
   height: 100%;
   max-height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Ensure proper tab bar positioning inside phone frame */
@@ -172,6 +181,19 @@
   right: 0 !important;
   width: 100% !important;
   z-index: 90 !important; /* Below home indicator */
+}
+
+/* Mobile device specific overrides */
+@media (max-width: 767px) {
+  .phone-frame-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .phone-frame-content .ios-app {
+    height: 100vh;
+    max-height: 100vh;
+  }
 }
 
 /* Responsive adjustments */

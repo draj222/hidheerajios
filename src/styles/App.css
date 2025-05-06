@@ -143,6 +143,17 @@ body {
     height: 100%;
     position: static; /* Prevent positioning issues */
   }
+  
+  /* Prevent body scrolling when in desktop mode with phone frame */
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* Only the content inside the phone should scroll */
+  .phone-frame-content .ios-content {
+    overflow-y: auto;
+  }
 }
 
 .ios-content {
@@ -151,11 +162,39 @@ body {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 80px; /* Give space for the tab bar */
   overflow-x: hidden;
+  height: auto;
+  min-height: 100%;
 }
 
 /* Make sure the content inside phone frame has proper spacing for tab bar */
 .phone-frame-content .ios-content {
   padding-bottom: 80px !important; /* Ensure space for the tab bar */
+  height: calc(100% - 55px - 20px); /* Subtract status bar and home indicator space */
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+/* Override for actual mobile devices */
+@media (max-width: 767px) {
+  .ios-content {
+    height: 100vh;
+    padding-bottom: 60px; /* Reduced padding for tab bar on mobile */
+    max-height: 100vh;
+    position: relative; 
+    top: 0;
+  }
+  
+  /* On actual mobile devices, there's no need for the phone frame content styles */
+  .phone-frame-content .ios-content {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 60px !important;
+  }
 }
 
 .ios-section {
