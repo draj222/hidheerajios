@@ -82,6 +82,21 @@ body.dark-theme .tab-item.active {
   transform: scale(0.9);
 }
 
+/* iOS-specific tab bar fixes */
+@supports (-webkit-touch-callout: none) {
+  .tab-bar {
+    height: calc(76px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 767px) {
+    .tab-bar {
+      height: calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+  }
+}
+
 /* Adjust content padding to make space for the tab bar */
 .phone-frame-content .ios-content {
   padding-bottom: 76px; /* Exact height of tab bar */
