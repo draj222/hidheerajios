@@ -62,7 +62,15 @@ body.dark-theme .project-description {
   color: var(--ios-dark-text-primary);
 }
 
-/* App Store link button */
+/* Project Links */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* App Store/Website link button */
 .app-link-button {
   display: inline-flex;
   align-items: center;
@@ -75,7 +83,6 @@ body.dark-theme .project-description {
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.2s ease;
-  margin-bottom: var(--spacing-md);
   box-shadow: 0 2px 8px var(--ios-appstore-shadow);
 }
 
@@ -95,7 +102,40 @@ body.dark-theme .app-link-button:hover {
   box-shadow: 0 4px 12px var(--ios-dark-appstore-shadow-hover);
 }
 
-.app-link-icon {
+/* GitHub link button */
+.github-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #24292e;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(36, 41, 46, 0.3);
+}
+
+.github-link-button:hover {
+  background-color: #1b1f23;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.4);
+}
+
+body.dark-theme .github-link-button {
+  background-color: #f6f8fa;
+  color: #24292e;
+  box-shadow: 0 2px 8px rgba(246, 248, 250, 0.3);
+}
+
+body.dark-theme .github-link-button:hover {
+  background-color: #e1e4e8;
+  box-shadow: 0 4px 12px rgba(246, 248, 250, 0.4);
+}
+
+.app-link-icon, .github-link-icon {
   margin-right: 4px;
 }
 

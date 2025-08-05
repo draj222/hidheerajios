@@ -126,22 +126,27 @@
   margin-right: 3px;
 }
 
-.print-icon-wrapper {
+.resume-actions {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 0.7;
+  display: flex;
+  gap: 10px;
   z-index: 10;
 }
 
-.print-icon-wrapper:hover {
+.print-icon-wrapper, .download-icon-wrapper {
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.print-icon-wrapper:hover, .download-icon-wrapper:hover {
   opacity: 1;
 }
 
 @media print {
-  .print-icon-wrapper {
+  .resume-actions {
     display: none;
   }
   

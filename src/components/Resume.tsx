@@ -10,12 +10,26 @@ const Resume: React.FC = () => {
     window.print();
   };
 
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = './assets/resume.pdf';
+    link.download = 'Dheeraj_Tallapragada_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="resume-page">
       <div className="resume-container" ref={resumeRef}>
-        <span className="print-icon-wrapper" onClick={handlePrint} title="Print Resume">
-          🖨️
-        </span>
+        <div className="resume-actions">
+          <span className="print-icon-wrapper" onClick={handlePrint} title="Print Resume">
+            🖨️
+          </span>
+          <span className="download-icon-wrapper" onClick={handleDownloadPDF} title="Download Resume PDF">
+            📥
+          </span>
+        </div>
         <div className="resume-header">
           <h1>{basics.name}</h1>
           <p className="resume-title">{basics.title}</p>

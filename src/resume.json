@@ -1,211 +1,123 @@
 {
   "basics": {
-    "name": "Prince Sojitra",
-    "title": "iOS Developer",
-    "image": "./assets/images/profile.jpeg",
-    "email": "princehsojitra@gmail.com",
-    "phone": "+919428242130",
-    "location": "Pune, Maharashtra, India",
+    "name": "Dheeraj Tallapragada",
+    "title": "hidheeraj",
+    "image": "./assets/images/pic.png",
+    "email": "dheerajt@uw.edu",
+    "phone": "+19254049856",
+    "location": "Dublin, CA, USA",
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "prince-sojitra-120404107",
-        "url": "https://linkedin.com/in/prince-sojitra-120404107"
+        "username": "dheerajtallapragada",
+        "url": "https://linkedin.com/in/dheerajtallapragada"
       },
       {
         "network": "GitHub",
-        "username": "princesojitra",
-        "url": "https://github.com/princesojitra"
+        "username": "draj222",
+        "url": "https://github.com/draj222"
       }
     ]
   },
-  "summary": "Software engineer with 11+ years of experience in iOS application development. Strong skills in Swift, SwiftUI, and Objective-C, with basic knowledge of Flutter. Experienced in the full development cycle from planning to release using Agile methods. Led teams and worked closely with QA and business teams. Focused on improving product quality through code reviews and testing. Good at turning client needs into workable solutions within Scrum teams.",
+  "summary": "Hi! I'm Dheeraj, incoming freshman at The University of Washington, passionate about the intersection between Machine Learning and Environmental Sustainability.\n\nFueled by curiosity and a desire to make an impact, I'm focused on creating data-driven solutions that push boundaries and address real-world challenges. I also advocate for sustainability policies with a mission to familiarize students with this niche field. I've explored machine learning through various research opportunities in areas like web/app development and predictive modeling.\n\nOutside of tech, I'm drawn to literature, sociology, and sports.\n\nI'd be happy to connect—feel free to reach out!",
   "skills": [
     {
-      "category": "Coding Languages",
-      "items": ["Objective-C", "Swift", "SwiftUI", "Dart"]
+      "category": "Programming Languages",
+      "items": ["Python", "Java", "JavaScript", "C++", "C", "TypeScript", "C#", "Swift", "HTML/CSS"]
     },
     {
-      "category": "Frameworks/Systems",
-      "items": ["MVC, MVVM, MVP, VIPER", "RxSwift", "Xcode", "Visual Studio"]
+      "category": "Web Development",
+      "items": ["React.js", "Next.js", "Tailwind CSS", "Bootstrap", "Responsive Design"]
     },
     {
-      "category": "Others",
-      "items": ["Object-Oriented Design", "Agile Methodology", "Software Testing and Debugging", "Communication", "Leadership"]
+      "category": "Machine Learning",
+      "items": ["Neural Networks", "Computer Vision", "NLP", "TensorFlow", "PyTorch", "Data Analysis", "Model Training", "Data Preprocessing"]
+    },
+    {
+      "category": "Development Tools",
+      "items": ["Git", "Visual Studio Code", "IntelliJ", "CLion", "PyCharm", "Unity", "MATLAB"]
+    },
+    {
+      "category": "Other Skills",
+      "items": ["Research Methodology", "Technical Writing", "Public Speaking", "Leadership", "Project Management", "Statistical Analysis", "Curriculum Development"]
     }
   ],
   "languages": [
-    { "language": "English", "fluency": "Proficient" },
-    { "language": "Hindi", "fluency": "Proficient" },
-    { "language": "Gujarati", "fluency": "Native" }
+    { "language": "English", "fluency": "Native" },
+    { "language": "Telugu", "fluency": "Native" }
   ],
   "work": [
     {
       "id": 1,
-      "title": "Senior Member of Technical Staff",
-      "company": "Axio Digital Private Limited",
-      "location": "Pune",
-      "period": "May 2022 – Present",
+      "title": "Urgent Care Intern",
+      "company": "Kaiser Permanente",
+      "location": "Dublin, CA",
+      "period": "Jun 2025 - Jul 2025",
       "responsibilities": [
-        "Developed and maintained a comprehensive iOS application for financial services, including credits, personal loans, and expense tracking.",
-        "Provided technical leadership, owning component design, development, and project delivery.",
-        "Collaborated with the mobile department manager to provide estimates and status updates.",
-        "Improved product quality through code reviews, unit testing, and QA collaboration."
+        "Saved 730 manual data-entry hours per year by automating EHR documentation.",
+        "Navigated Epic for appointment notes, breast and cervical cancer screening bookings, X-ray orders, patient rooming, vital sign collection, and radiology escorts.",
+        "Support clinical operations by managing barcode-based specimen hand-offs to the lab, streamlining exam-room turnover with basic Lean methodologies, participating in daily Agile-style stand-ups to align on KP LAUNCH objectives, and shadowing IT (ticket triage & backup scripting), Administration (PeopleSoft reporting & compliance workflows), and Radiology (DICOM PACS auditing & imaging QC)",
+        "Built and pitched a Python-based AI scanner leveraging NLP to extract screening and order data from patient profiles and auto-populate structured appointment notes."
       ]
     },
     {
       "id": 2,
-      "title": "Technical Lead",
-      "company": "Wipro Limited",
-      "location": "Pune",
-      "period": "November 2020 – May 2022",
+      "title": "Research Partner",
+      "company": "University of Texas, San Antonio",
+      "location": "San Antonio, TX",
+      "period": "Apr 2025 - Present",
       "responsibilities": [
-        "Collaborated with cross-functional teams to define, design, and ship new features.",
-        "Coordinated project development, prioritizing goals and deadlines.",
-        "Ensured application performance, quality, and responsiveness."
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Software Engineer",
-      "company": "DRC Systems India Limited",
-      "location": "Gandhinagar",
-      "period": "June 2013 – October 2020",
-      "responsibilities": [
-        "Worked with designers and developers to build new features aligned with the product roadmap.",
-        "Designed and developed high-performance iOS applications.",
-        "Identified and resolved bottlenecks and bugs to ensure quality."
+        "Develop a two-stage deep learning pipeline that delivered 92% ROC AUC for satellite anomaly detection and 94% accuracy in field disease classification.",
+        "Automate the processing of 5,000+ images, and cut inspection costs by 40% across 500 hectares.",
+        "Conduct research under Dr. Kyrie Zhou to pioneer a scalable precision agriculture framework, supporting sustainable orchard management; integrate Sentinel-2 time series, UAV orthomosaics, and NOAA weather data into a unified pipeline for anomaly localization and tree-level classification"
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Technology (B.Tech.) in Computer Engineering",
-      "institution": "Dharmsinh Desai University, Nadiad",
-      "period": "June 2009 – May 2013"
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Washington, Seattle",
+      "period": "Sep 2025 - Present"
+    },
+    {
+      "degree": "High School Diploma",
+      "institution": "Dublin High School, Dublin",
+      "period": "2021 - 2025"
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "axio: BNPL, Personal Loan & Expense Tracker",
-      "role": "iOS Developer",
-      "language": "Swift, Combine",
-      "technology": "iOS",
-      "folderName": "axio",
-      "description": "Simple and intuitive, the axio app brings three industry-leading products: 1) axio Pay Later - BNPL credit facility transforming purchases into affordable EMIs, 2) Personal loan - Access exceptional loan options, monitor EMIs, and receive timely repayment reminders, 3) Shop - Explore categories across brands with affordable EMIs, 4) Expense Tracker - Track expenses, plan budgets, monitor daily/monthly expenses, manage bills, and receive payment reminders, 5) Splits & Groups - Split expenses with friends/family in private or shared groups with in-app chat and flexible splitting options.",
-      "appLink": "https://apps.apple.com/in/app/axio-bnpl-personal-loan/id6449531839",
-      "screenshots": [
-        "./assets/projects/axio/screenshot-1.png",
-        "./assets/projects/axio/screenshot-2.png",
-        "./assets/projects/axio/screenshot-3.png",
-        "./assets/projects/axio/screenshot-4.png",
-        "./assets/projects/axio/screenshot-5.png",
-        "./assets/projects/axio/screenshot-6.png",
-        "./assets/projects/axio/screenshot-7.png",
-        "./assets/projects/axio/screenshot-8.png"
-      ]
+      "title": "Pitch Perfect",
+      "role": "Developer",
+      "language": "JavaScript, Python",
+      "technology": "Discord Bot, AI",
+      "folderName": "pitch-perfect",
+      "description": "AI-powered Discord bot designed to help founders and entrepreneurs improve their startup pitches. Features real-time voice recording in Discord voice channels, AI transcription using Whisper technology, GPT-4 powered pitch analysis and feedback, detailed metrics on pitch content, delivery, and structure, and actionable improvement suggestions. Users can record up to 5-minute pitches and receive instant, professional-style feedback with specific insights on clarity, persuasiveness, and overall presentation.",
+      "appLink": "https://www.pitch-perfect.app",
+      "screenshots": []
     },
     {
       "id": 2,
-      "title": "My Telstra - Utilities",
-      "role": "Module Lead",
-      "language": "Swift, RxSwift",
-      "technology": "iOS",
-      "folderName": "my-telstra",
-      "description": "The My Telstra app is helping over 4.5 million users securely access and manage their Telstra accounts and services. Sign in with a Telstra ID or create one when you've downloaded the app and get the latest on your services, Telstra Plus points, bills and payments when you want it, shop latest devices and accessories and get help when you need it, all in one place.",
-      "appLink": "https://apps.apple.com/us/app/my-telstra/id543829966",
-      "screenshots": [
-        "./assets/projects/my-telstra/screenshot-1.png",
-        "./assets/projects/my-telstra/screenshot-2.png",
-        "./assets/projects/my-telstra/screenshot-3.png"
-      ]
+      "title": "StopMeet",
+      "role": "Developer",
+      "language": "React, Node.js, PostgreSQL",
+      "technology": "Web Application",
+      "folderName": "stopmeet",
+      "description": "AI-powered meeting governance platform designed to optimize organizational meeting practices. Features AI-powered tools that automatically audit calendars, recommend meeting cancellations, generate dynamic meeting agendas, and provide real-time meeting analysis. Includes advanced analytics to track meeting efficiency metrics, visualize meeting patterns, calculate meeting ROI, and generate custom reports. Smart meeting management capabilities centralize calendar views, flag meeting issues, optimize attendee participation, and manage meeting buffer times.",
+      "githubLink": "https://github.com/draj222/stopmeet",
+      "screenshots": []
     },
     {
       "id": 3,
-      "title": "Sun Keeper - Health & Fitness",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "sun-keeper",
-      "description": "This simple and user-friendly app helps you to manage your personal recommended daily sun exposure for optimal production of vitamin D and overall skin health — and before you're ever at risk of burning. By authorizing your location and entering basic personal information about your skin type, Sun Keeper will calculate a sufficient and appropriate length of time you should spend in the sun. When your sun-exposure limit is reached, the app will alert and remind you to reapply sunscreen, cover up, or get out of the sun. Sun Keeper offers recommendations that vary with the individual and are based on the personal information you enter along with your location, date, and time.",
-      "screenshots": [
-        "./assets/projects/sun-keeper/screenshot-1.png",
-        "./assets/projects/sun-keeper/screenshot-2.png",
-        "./assets/projects/sun-keeper/screenshot-3.png",
-        "./assets/projects/sun-keeper/screenshot-4.png",
-        "./assets/projects/sun-keeper/screenshot-5.png"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "LECA Consultant - Energy Projects",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "leca-consultant-app",
-      "description": "The Leca Consultant application is a tool catered for our consultants where they can not only handle their day-to-day consultations but also create installation jobs and collect the required customer details. The in-built Leca Calculator, calculates the ideal system size for a customer based on these details and the app allows them to track each installation job they created, throughout its life-cycle.",
-      "screenshots": [
-        "./assets/projects/leca-consultant-app/screenshot-1.png",
-        "./assets/projects/leca-consultant-app/screenshot-2.png",
-        "./assets/projects/leca-consultant-app/screenshot-3.png",
-        "./assets/projects/leca-consultant-app/screenshot-4.png"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "LECA Installer - Energy Projects",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "leca-installer-app",
-      "description": "The Leca Installer application is a tool catered for our installers where they can not only handle their day-to-day installation jobs but also schedule future jobs. The app assists the installers throughout an installation, right from knowing every job detail prior to job acceptance, to managing all post-installation documentation. The app notifies registered Installers about upcoming installation jobs and site visits. They can proceed to accept jobs after they take a look at the job description provided. On the day of the installation, the app tracks the entire installation process step-by-step and allows the admin at Leca to validate the installation.",
-      "screenshots": [
-        "./assets/projects/leca-installer-app/screenshot-1.png",
-        "./assets/projects/leca-installer-app/screenshot-2.png",
-        "./assets/projects/leca-installer-app/screenshot-3.png"
-      ]
-    },
-    {
-      "id": 6,
-      "title": "PlayBill - Broadway Theater Experience",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "playbill",
-      "description": "This application enhances the Broadway theater experience through a mobile platform that offers information and social features. It operates in two modes: 1) Non-Contextual Mode (Default) - Shows general information about Broadway shows and theaters when not near any specific theater, 2) Contextual Mode - Activates automatically when entering a specific theater (detected by beacons), providing specific information about that theater and its shows. Features include listings of shows, theater details, nearby attractions with photos and reviews, and location-based recommendations for restaurants and bars.",
-      "screenshots": [
-        
-      ]
-    },
-    {
-      "id": 7,
-      "title": "TAP - Medical Platform",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "tap",
-      "description": "TAP is your new medical platform that meets your needs. It enables you to book a telemedicine consultation with one of our highly qualified & specialized physicians in Saudi Arabia. Upon consultation, your prescription will be sent to you and you can have your medication delivered at your doorstep if you are in Riyadh. Also, coming soon, if you are tired of looking for your prescription just send it to us and relax, we will take care of the rest.",
-      "screenshots": [
-        
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Big Joker Spades - Card Game",
-      "role": "Senior iOS Developer",
-      "language": "Swift",
-      "technology": "iOS",
-      "folderName": "big-joker-spades",
-      "description": "Big Joker Spades is focused on bringing an emotional feel to the popular game \"Spades\" through the use of animations and intense game-play. Winning books by cool features and utilizing Jokers throughout the game brings a connection to the players that they won't experience on any other spades platform. In this game jokers are positioned as the highest Spades. So instead of just 13 spades, there are now 15 spades. With more spades it makes this variation an easier game to play.",
-      "screenshots": [
-        "./assets/projects/big-joker-spades/screenshot-1.png",
-        "./assets/projects/big-joker-spades/screenshot-2.png",
-        "./assets/projects/big-joker-spades/screenshot-3.png",
-        "./assets/projects/big-joker-spades/screenshot-4.png",
-        "./assets/projects/big-joker-spades/screenshot-5.png",
-        "./assets/projects/big-joker-spades/screenshot-6.png"
-      ]
+      "title": "Predictive Maintenance in Digital Manufacturing",
+      "role": "Researcher",
+      "language": "Python, TensorFlow",
+      "technology": "Machine Learning",
+      "folderName": "predictive-maintenance",
+      "description": "Deep learning framework for air quality monitoring and prediction that detects anomalies in air quality monitoring data from the EPA. Develops binary classification models for air quality using machine learning, focusing on PM2.5 and Ozone pollutants. Classifies air quality as 'normal' or 'hazardous' using LSTM and CNN models. LSTM model achieved 100% accuracy while CNN model achieved 99.87% accuracy, with ROC curves scoring perfectly (1.0 AUC). Aims to improve environmental monitoring systems and supports intelligent environmental monitoring for public health.",
+      "githubLink": "https://github.com/draj222/Predictive-Maintenance-in-Digital-Manufacturing",
+      "screenshots": []
     }
   ]
 } 
